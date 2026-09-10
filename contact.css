@@ -1,0 +1,165 @@
+```css
+.background {
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.h1 {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    color: rgba(233, 116, 135, 0.858);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.image-wa {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    width: 100px;
+    animation: waGerak 4s ease-in-out infinite;
+}
+
+@keyframes waGerak {
+    0%, 100% {
+        transform: translateX(0) rotate(-2deg);
+    }
+
+    50% {
+        transform: translateX(80px) rotate(-2deg);
+    }
+}
+
+.image-ig {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    width: 75px;
+    animation: igGerak 4s ease-in-out infinite;
+}
+
+@keyframes igGerak {
+    0%, 100% {
+        transform: translateX(0) rotate(-2deg);
+    }
+
+    50% {
+        transform: translateX(40px) rotate(-2deg);
+    }
+}
+
+.image-tiktok {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 70px;
+    animation: tiktokGerak 4s ease-out infinite;
+}
+
+@keyframes tiktokGerak {
+    0%, 100% {
+        transform: translateX(0) rotate(-2deg);
+    }
+
+    50% {
+        transform: translateX(70px) rotate(-2deg);
+    }
+}
+
+.paragraf {
+    position: absolute;
+    top: 60%;
+    left: 250px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: rgb(203, 63, 86);
+}
+
+.lope {
+    position: absolute;
+    top: 3%;
+    left: 40%;
+    width: 300px;
+}
+
+.garis {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 200px;
+}
+
+@media (max-width: 768px) {
+
+    .image-wa {
+        width: 80px;
+    }
+
+    .image-ig {
+        width: 60px;
+    }
+
+    .image-tiktok {
+        width: 55px;
+    }
+
+    .lope {
+        width: 220px;
+    }
+
+    .garis {
+        width: 150px;
+    }
+
+    .paragraf {
+        left: 20%;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .h1 {
+        top: 5%;
+        left: 8%;
+        font-size: 24px;
+    }
+
+    .image-wa {
+        top: 15%;
+        left: 8%;
+        width: 60px;
+    }
+
+    .image-ig {
+        top: 30%;
+        left: 8%;
+        width: 50px;
+    }
+
+    .image-tiktok {
+        top: 45%;
+        left: 8%;
+        width: 45px;
+    }
+
+    .lope {
+        top: 5%;
+        left: 45%;
+        width: 150px;
+    }
+
+    .garis {
+        top: 18%;
+        left: 12%;
+        width: 100px;
+    }
+
+    .paragraf {
+        top: 60%;
+        left: 10%;
+        font-size: 13px;
+        max-width: 80%;
+    }
+}

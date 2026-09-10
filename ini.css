@@ -1,0 +1,236 @@
+/* =========================
+   NAVBAR
+   ========================= */
+
+.ul-class {
+    background-color: rgba(253, 247, 247, 0.675);
+    border-radius: 15px;
+
+    margin: 0;
+    padding: 10px 20px;
+
+    /* Menu sejajar */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    gap: 30px;
+
+    /* Biar navbar tidak melewati layar */
+    box-sizing: border-box;
+    width: 100%;
+}
+
+
+/* Menu navbar */
+
+.li-home,
+.li-aboutme,
+.li-contact,
+.li-love {
+    list-style: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #eb93a2;
+}
+
+
+/* Link */
+
+a {
+    text-decoration: none;
+    color: #e4667b;
+}
+
+a:hover {
+    color: #af4363;
+}
+
+a:active {
+    color: #8e4c57;
+}
+
+
+/* My little corner */
+
+.li-little {
+    list-style: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    /* Mendorong menu lain ke kanan */
+    margin-right: auto;
+
+    color: #e4667b;
+}
+
+
+/* =========================
+   GAMBAR UTAMA
+   ========================= */
+
+.container-gambar {
+    position: relative;
+
+    /* Mengikuti ukuran layar */
+    width: 100%;
+
+    /* Supaya padding/width tidak bikin overflow */
+    box-sizing: border-box;
+}
+
+
+/* Gambar */
+
+.container-gambar img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+
+    display: block;
+}
+
+
+/* =========================
+   TEKS DI ATAS GAMBAR
+   ========================= */
+
+.teks-di-atas-gambar {
+    position: absolute;
+
+    /* Posisi relatif terhadap GAMBAR */
+    top: 20%;
+    left: 40px;
+
+    transform: translateY(-50%);
+
+    color: rgb(203, 85, 144);
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    text-align: left;
+
+    /* Supaya teks tidak terlalu lebar */
+    max-width: 45%;
+
+    box-sizing: border-box;
+}
+
+
+/* Menghilangkan margin bawaan */
+
+.teks-di-atas-gambar p,
+.teks-di-atas-gambar h1 {
+    margin: 0;
+}
+
+
+/* Judul */
+
+.teks-di-atas-gambar h1 {
+    font-size: clamp(25px, 4vw, 50px);
+}
+
+
+/* Tulisan biasa */
+
+.teks-di-atas-gambar p {
+    font-size: clamp(14px, 1.8vw, 22px);
+}
+
+
+/* =========================
+   PRE / KALIMAT
+   ========================= */
+
+.teks-di-atas-gambar pre {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    /* Biar tulisan tidak memaksa halaman melebar */
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+
+    font-size: clamp(12px, 1.5vw, 18px);
+}
+
+
+/* =========================
+   EXPLORE
+   ========================= */
+
+.explore {
+    background-color: pink;
+    border-radius: 15px;
+
+    padding: 5px 10px;
+
+    width: fit-content;
+    max-width: 100%;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .ul-class {
+        gap: 15px;
+        padding: 8px 12px;
+    }
+
+    .teks-di-atas-gambar {
+        left: 25px;
+        top: 25%;
+
+        max-width: 50%;
+    }
+
+}
+
+
+/* =========================
+   HP
+   ========================= */
+
+@media (max-width: 480px) {
+
+    .ul-class {
+        gap: 8px;
+        padding: 8px;
+
+        /* Kalau layar terlalu kecil,
+           menu boleh turun ke baris berikutnya */
+        flex-wrap: wrap;
+    }
+
+    .li-little {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .teks-di-atas-gambar {
+        left: 15px;
+        top: 30%;
+
+        max-width: 55%;
+    }
+
+    .teks-di-atas-gambar h1 {
+        font-size: 25px;
+    }
+
+    .teks-di-atas-gambar p {
+        font-size: 12px;
+    }
+
+    .teks-di-atas-gambar pre {
+        font-size: 10px;
+    }
+
+    .explore {
+        padding: 4px 8px;
+    }
+}

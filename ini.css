@@ -9,32 +9,36 @@
     margin: 0;
     padding: 10px 20px;
 
-    /* Menu sejajar */
     display: flex;
     justify-content: flex-end;
     align-items: center;
 
     gap: 30px;
 
-    /* Biar navbar tidak melewati layar */
     box-sizing: border-box;
     width: 100%;
 }
 
 
-/* Menu navbar */
+/* =========================
+   MENU NAVBAR
+   ========================= */
 
 .li-home,
 .li-aboutme,
 .li-contact,
 .li-love {
     list-style: none;
+
     font-family: Georgia, 'Times New Roman', Times, serif;
+
     color: #eb93a2;
 }
 
 
-/* Link */
+/* =========================
+   LINK
+   ========================= */
 
 a {
     text-decoration: none;
@@ -50,13 +54,15 @@ a:active {
 }
 
 
-/* My little corner */
+/* =========================
+   MY LITTLE CORNER
+   ========================= */
 
 .li-little {
     list-style: none;
+
     font-family: Georgia, 'Times New Roman', Times, serif;
 
-    /* Mendorong menu lain ke kanan */
     margin-right: auto;
 
     color: #e4667b;
@@ -70,10 +76,8 @@ a:active {
 .container-gambar {
     position: relative;
 
-    /* Mengikuti ukuran layar */
     width: 100%;
 
-    /* Supaya padding/width tidak bikin overflow */
     box-sizing: border-box;
 }
 
@@ -96,7 +100,6 @@ a:active {
 .teks-di-atas-gambar {
     position: absolute;
 
-    /* Posisi relatif terhadap GAMBAR */
     top: 20%;
     left: 40px;
 
@@ -108,7 +111,6 @@ a:active {
 
     text-align: left;
 
-    /* Supaya teks tidak terlalu lebar */
     max-width: 45%;
 
     box-sizing: border-box;
@@ -123,7 +125,9 @@ a:active {
 }
 
 
-/* Judul */
+/* =========================
+   JUDUL
+   ========================= */
 
 .teks-di-atas-gambar h1 {
     font-size: clamp(25px, 4vw, 50px);
@@ -144,7 +148,6 @@ a:active {
 .teks-di-atas-gambar pre {
     font-family: Georgia, 'Times New Roman', Times, serif;
 
-    /* Biar tulisan tidak memaksa halaman melebar */
     white-space: pre-wrap;
     overflow-wrap: break-word;
 
@@ -158,6 +161,7 @@ a:active {
 
 .explore {
     background-color: pink;
+
     border-radius: 15px;
 
     padding: 5px 10px;
@@ -186,7 +190,6 @@ a:active {
 
         max-width: 50%;
     }
-
 }
 
 
@@ -200,14 +203,13 @@ a:active {
         gap: 8px;
         padding: 8px;
 
-        /* Kalau layar terlalu kecil,
-           menu boleh turun ke baris berikutnya */
         flex-wrap: wrap;
     }
 
     .li-little {
         width: 100%;
         margin-right: 0;
+
         text-align: center;
     }
 

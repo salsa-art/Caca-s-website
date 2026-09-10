@@ -100,6 +100,41 @@ body {
 
 
 /* ================================
+   LATAR BELAKANG (di dalam gambar)
+   ================================ */
+
+.latar-section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.latar-overlay {
+    background-color: rgba(255, 255, 255, 0.82);
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+
+    max-width: 700px;
+    width: 100%;
+    padding: 24px 28px;
+}
+
+.latar-overlay .section-title {
+    margin-top: 0;
+}
+
+.latar-overlay p {
+    font-size: clamp(14px, 1.5vw, 18px);
+    line-height: 1.6;
+    margin: 0 0 20px;
+}
+
+
+/* ================================
    CONTENT (biodata & hobi)
    ================================ */
 
@@ -202,6 +237,14 @@ body {
 
     .content {
         padding: 16px 16px 40px;
+    }
+
+    .latar-section {
+        padding: 30px 14px;
+    }
+
+    .latar-overlay {
+        padding: 18px 18px;
     }
 
     .gallery img {

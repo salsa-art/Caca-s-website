@@ -1,4 +1,12 @@
-```css
+/* ================================
+   RESET
+   ================================ */
+
+* {
+    box-sizing: border-box;
+}
+
+
 /* ================================
    BODY
    ================================ */
@@ -14,18 +22,23 @@ body {
 
     overflow-x: hidden;
     width: 100%;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
 /* ================================
-   CONTAINER
+   CONTAINER UTAMA
    ================================ */
 
 .container-gambar {
+    position: relative;
+
     margin: auto;
     width: 100%;
-    height: 80px;
-    display: block;
+
+    /* Memberikan ruang untuk semua gambar */
+    min-height: 4200px;
 }
 
 
@@ -35,22 +48,28 @@ body {
 
 .teks-diatas-gambar {
     position: absolute;
-    background-color: rgba(142, 200, 148, 0.547);
-    border-radius: 9px 13px;
-    box-shadow: 9px 13px rgba(0, 0, 0, 0.15);
 
-    top: 30%;
+    top: 30px;
     left: 20%;
 
-    transform: translateX(-50%);
+    width: 60%;
+    padding: 15px;
+
+    background-color: rgba(142, 200, 148, 0.547);
+
+    border-radius: 9px 13px;
+
+    box-shadow: 9px 13px rgba(0, 0, 0, 0.15);
 
     font-size: 10px;
+
     color: rgb(203, 85, 144);
 
     font-family: Georgia, 'Times New Roman', Times, serif;
+
     text-align: left;
 
-    box-sizing: border-box;
+    line-height: 1.3;
 }
 
 
@@ -60,8 +79,12 @@ body {
 
 .pre {
     font-family: Georgia, 'Times New Roman', Times, serif;
+
     font-size: 12px;
+
     white-space: pre-wrap;
+
+    margin: 10px 0 0;
 }
 
 
@@ -75,6 +98,7 @@ body {
     height: auto;
 
     position: absolute;
+
     top: 5px;
     left: 35%;
 }
@@ -89,6 +113,7 @@ body {
     height: auto;
 
     position: absolute;
+
     left: 0;
     top: 500px;
 }
@@ -103,6 +128,7 @@ body {
     height: auto;
 
     position: absolute;
+
     right: 0;
     top: 1700px;
 }
@@ -117,14 +143,15 @@ body {
     height: auto;
 
     position: absolute;
+
     left: 60%;
     top: 1450px;
 }
 
 
-/* ================================
+/* ==================================================
    IMAGE 5 - 13
-   ================================ */
+   ================================================== */
 
 .image-5,
 .image-6,
@@ -135,12 +162,14 @@ body {
 .image-11,
 .image-12,
 .image-13 {
+
     width: 100px;
     height: auto;
 
     position: absolute;
 
     padding: 10px;
+
     background-color: white;
 
     box-sizing: content-box;
@@ -154,6 +183,7 @@ body {
     top: 1950px;
 
     border: 2px solid pink;
+
     box-shadow: 5px 5px 10px rgb(194, 79, 79);
 }
 
@@ -165,6 +195,7 @@ body {
     top: 1950px;
 
     border: 2px solid rgba(200, 136, 204, 0.591);
+
     box-shadow: 5px 5px 10px rgba(163, 79, 194, 0.6);
 }
 
@@ -176,6 +207,7 @@ body {
     top: 1950px;
 
     border: 2px solid rgba(179, 227, 225, 0.591);
+
     box-shadow: 5px 5px 10px rgba(80, 228, 236, 0.6);
 }
 
@@ -187,6 +219,7 @@ body {
     top: 1950px;
 
     border: 2px solid rgba(213, 213, 133, 0.591);
+
     box-shadow: 5px 5px 10px rgba(136, 230, 122, 0.6);
 }
 
@@ -198,6 +231,7 @@ body {
     top: 2100px;
 
     border: 2px solid rgba(236, 210, 171, 0.591);
+
     box-shadow: 5px 5px 10px rgba(142, 133, 8, 0.6);
 }
 
@@ -209,6 +243,7 @@ body {
     top: 2200px;
 
     border: 2px solid rgba(236, 171, 171, 0.591);
+
     box-shadow: 5px 5px 10px rgba(137, 20, 20, 0.6);
 }
 
@@ -220,6 +255,7 @@ body {
     top: 2200px;
 
     border: 2px solid rgba(187, 171, 236, 0.591);
+
     box-shadow: 5px 5px 10px rgba(48, 98, 214, 0.6);
 }
 
@@ -231,6 +267,7 @@ body {
     top: 2200px;
 
     border: 2px solid rgba(171, 236, 220, 0.591);
+
     box-shadow: 5px 5px 10px rgba(156, 11, 45, 0.6);
 }
 
@@ -242,13 +279,14 @@ body {
     top: 2200px;
 
     border: 2px solid rgba(179, 209, 201, 0.591);
+
     box-shadow: 5px 5px 10px rgba(95, 18, 102, 0.6);
 }
 
 
-/* ================================
+/* ==================================================
    IMAGE 14 - 24
-   ================================ */
+   ================================================== */
 
 .image-14,
 .image-15,
@@ -261,15 +299,18 @@ body {
 .image-22,
 .image-23,
 .image-24 {
+
     width: 100px;
     height: auto;
 
     position: absolute;
 
     padding: 5px;
+
     background-color: white;
 
     border: 4px solid pink;
+
     border-radius: 25px;
 
     transform: rotate(-2deg);
@@ -285,11 +326,13 @@ body {
 .image-14 {
     left: 15%;
     top: 2570px;
+
     box-shadow: 0 0 20px pink;
 }
 
 .image-14:hover {
     transform: scale(1.05) rotate(2deg);
+
     box-shadow: 0 0 20px rgb(157, 22, 45);
 }
 
@@ -299,11 +342,13 @@ body {
 .image-15 {
     left: 30%;
     top: 2570px;
+
     box-shadow: 0 0 20px rgb(230, 52, 82);
 }
 
 .image-15:hover {
     transform: scale(1.05) rotate(2deg);
+
     box-shadow: 0 0 20px rgb(103, 42, 52);
 }
 
@@ -313,11 +358,13 @@ body {
 .image-16 {
     left: 45%;
     top: 2570px;
+
     box-shadow: 0 0 20px rgba(208, 85, 221, 0.213);
 }
 
 .image-16:hover {
     transform: scale(1.05) rotate(2deg);
+
     box-shadow: 0 0 20px rgb(201, 117, 131);
 }
 
@@ -327,11 +374,13 @@ body {
 .image-17 {
     left: 60%;
     top: 2570px;
+
     box-shadow: 0 0 20px rgba(208, 85, 221, 0.213);
 }
 
 .image-17:hover {
     transform: scale(1.05) rotate(2deg);
+
     box-shadow: 0 0 20px rgb(154, 247, 123);
 }
 
@@ -341,11 +390,13 @@ body {
 .image-18 {
     left: 75%;
     top: 2700px;
+
     box-shadow: 0 0 20px rgba(208, 85, 221, 0.213);
 }
 
 .image-18:hover {
     transform: scale(1.05) rotate(2deg);
+
     box-shadow: 0 0 20px rgb(244, 140, 66);
 }
 
@@ -355,12 +406,15 @@ body {
 .image-19 {
     left: 15%;
     top: 2800px;
+
     border-color: rgb(220, 130, 145);
+
     box-shadow: 0 0 20px rgba(207, 85, 221, 0.449);
 }
 
 .image-19:hover {
     transform: scale(1.05) rotate(2deg);
+
     box-shadow: 0 0 20px rgb(209, 49, 49);
 }
 
@@ -370,12 +424,15 @@ body {
 .image-20 {
     left: 30%;
     top: 2800px;
+
     border-color: rgb(220, 130, 145);
+
     box-shadow: 0 0 20px rgba(212, 100, 224, 0.449);
 }
 
 .image-20:hover {
     transform: scale(1.05) rotate(2deg);
+
     box-shadow: 0 0 20px rgba(125, 176, 215, 0.228);
 }
 
@@ -385,12 +442,15 @@ body {
 .image-21 {
     left: 45%;
     top: 2800px;
+
     border-color: rgb(220, 130, 145);
+
     box-shadow: 0 0 20px rgba(92, 39, 98, 0.449);
 }
 
 .image-21:hover {
     transform: scale(1.05) rotate(2deg);
+
     box-shadow: 0 0 20px rgba(39, 137, 212, 0.77);
 }
 
@@ -398,14 +458,17 @@ body {
 /* IMAGE 22 */
 
 .image-22 {
-    left: 45%;
+    left: 60%;
     top: 2800px;
+
     border-color: rgb(220, 130, 145);
+
     box-shadow: 0 0 20px rgba(92, 39, 98, 0.449);
 }
 
 .image-22:hover {
     transform: scale(1.05) rotate(2deg);
+
     box-shadow: 0 0 20px rgba(25, 90, 139, 0.77);
 }
 
@@ -413,14 +476,17 @@ body {
 /* IMAGE 23 */
 
 .image-23 {
-    left: 60%;
+    left: 75%;
     top: 2800px;
+
     border-color: rgb(220, 130, 145);
+
     box-shadow: 0 0 20px rgba(92, 39, 98, 0.743);
 }
 
 .image-23:hover {
     transform: scale(1.05) rotate(2deg);
+
     box-shadow: 0 0 20px rgba(93, 228, 142, 0.77);
 }
 
@@ -430,19 +496,22 @@ body {
 .image-24 {
     left: 90%;
     top: 2700px;
+
     border-color: rgb(220, 130, 145);
+
     box-shadow: 0 0 20px rgba(92, 39, 98, 0.743);
 }
 
 .image-24:hover {
     transform: scale(1.05) rotate(2deg);
+
     box-shadow: 0 0 20px rgba(93, 228, 142, 0.77);
 }
 
 
-/* ================================
+/* ==================================================
    IMAGE 25 - 43
-   ================================ */
+   ================================================== */
 
 .image-25,
 .image-26,
@@ -463,15 +532,18 @@ body {
 .image-41,
 .image-42,
 .image-43 {
+
     width: 100px;
     height: auto;
 
     position: absolute;
 
     padding: 5px;
+
     background-color: white;
 
     border: 4px solid rgba(220, 130, 145, 0.518);
+
     border-radius: 25px;
 
     box-shadow: 0 0 20px rgba(105, 227, 162, 0.743);
@@ -484,7 +556,9 @@ body {
 }
 
 
-/* Posisi gambar */
+/* ================================
+   POSISI IMAGE 25 - 43
+   ================================ */
 
 .image-25 {
     left: 15%;
@@ -578,7 +652,7 @@ body {
 
 .image-43 {
     left: 15%;
-    top: 3650px;
+    top: 3800px;
 }
 
 
@@ -607,13 +681,19 @@ body {
     width: min(1100px, 90%);
 
     position: absolute;
+
     left: 5%;
     top: 500px;
 
+    margin: 0;
+
     font-family: Georgia, 'Times New Roman', Times, serif;
+
     font-size: clamp(30px, 4vw, 50px);
 
     text-align: center;
+
+    color: rgb(203, 85, 144);
 }
 
 
@@ -629,20 +709,26 @@ body {
 .p-hobii,
 .p-ket,
 .p-ibis {
-    width: min(1100px, 65%);
 
     position: absolute;
-    left: 30%;
 
     font-family: Georgia, 'Times New Roman', Times, serif;
 
     text-align: left;
 
     box-sizing: border-box;
+
+    margin: 0;
+
+    line-height: 1.5;
+
+    color: rgb(155, 91, 119);
 }
 
 
-/* Ukuran paragraf */
+/* ================================
+   UKURAN PARAGRAF
+   ================================ */
 
 .biodata-p,
 .p-2,
@@ -651,11 +737,18 @@ body {
 .p-hobii,
 .p-ket,
 .p-ibis {
+
+    width: min(1100px, 65%);
+
+    left: 30%;
+
     font-size: clamp(14px, 1.5vw, 20px);
 }
 
 
-/* Posisi paragraf */
+/* ================================
+   POSISI PARAGRAF
+   ================================ */
 
 .biodata-p {
     top: 600px;
@@ -679,8 +772,16 @@ body {
    ================================ */
 
 .p-hobi {
+
+    width: min(1100px, 65%);
+
+    left: 30%;
+
     top: 1450px;
+
     font-size: clamp(28px, 3vw, 40px);
+
+    color: rgb(178, 79, 132);
 }
 
 .p-hobii {
@@ -701,9 +802,9 @@ body {
 }
 
 
-/* ================================
+/* ==================================================
    TABLET
-   ================================ */
+   ================================================== */
 
 @media (max-width: 768px) {
 
@@ -721,6 +822,9 @@ body {
         width: 35%;
     }
 
+
+    /* Ukuran gambar */
+
     .image-5,
     .image-6,
     .image-7,
@@ -760,8 +864,12 @@ body {
     .image-41,
     .image-42,
     .image-43 {
+
         width: 75px;
     }
+
+
+    /* Teks */
 
     .biodata-p,
     .p-2,
@@ -771,43 +879,82 @@ body {
     .p-hobii,
     .p-ket,
     .p-ibis {
-        width: 60%;
+
+        width: 65%;
+
         left: 25%;
     }
 }
 
 
-/* ================================
+/* ==================================================
    HP
-   ================================ */
+   ================================================== */
 
 @media (max-width: 480px) {
 
+
+    /* ================================
+       TEKS ATAS
+       ================================ */
+
     .teks-diatas-gambar {
-        top: 25%;
-        left: 25%;
-        max-width: 50%;
+
+        top: 20px;
+
+        left: 10%;
+
+        width: 80%;
+
+        padding: 10px;
+
         font-size: 8px;
     }
+
 
     .pre {
         font-size: 9px;
     }
 
+
+    /* ================================
+       IMAGE 1
+       ================================ */
+
     .image-1 {
+
         width: 50%;
+
         left: 25%;
     }
 
+
+    /* ================================
+       IMAGE 2
+       ================================ */
+
     .image-2 {
+
         width: 95%;
+
         top: 500px;
     }
 
+
+    /* ================================
+       IMAGE 3 & 4
+       ================================ */
+
     .image-3,
     .image-4 {
+
         width: 35%;
     }
+
+
+    /* ================================
+       SEMUA GAMBAR KECIL
+       ================================ */
 
     .image-5,
     .image-6,
@@ -848,27 +995,30 @@ body {
     .image-41,
     .image-42,
     .image-43 {
+
         width: 55px;
+
         padding: 4px;
     }
 
+
+    /* ================================
+       JUDUL LATAR BELAKANG
+       ================================ */
+
     .h1-latar-b {
+
         width: 90%;
+
         left: 5%;
+
         font-size: 28px;
     }
 
-    .biodata-p,
-    .p-2,
-    .p-3,
-    .p-4,
-    .p-hobi,
-    .p-hobii,
-    .p-ket,
-    .p-ibis {
-        width: 65%;
-        left: 25%;
-    }
+
+    /* ================================
+       PARAGRAF
+       ================================ */
 
     .biodata-p,
     .p-2,
@@ -877,10 +1027,27 @@ body {
     .p-hobii,
     .p-ket,
     .p-ibis {
+
+        width: 70%;
+
+        left: 20%;
+
         font-size: 13px;
+
+        line-height: 1.5;
     }
+
+
+    /* ================================
+       JUDUL HOBI
+       ================================ */
 
     .p-hobi {
+
+        width: 80%;
+
+        left: 10%;
+
         font-size: 24px;
     }
 }

@@ -1,5 +1,5 @@
-```css
 .background {
+    position: relative;
     width: 100%;
     min-height: 100vh;
     box-sizing: border-box;
@@ -13,15 +13,22 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+
+/* =========================
+   WHATSAPP
+   ========================= */
+
 .image-wa {
     position: absolute;
     top: 15%;
     left: 5%;
     width: 100px;
+
     animation: waGerak 4s ease-in-out infinite;
 }
 
 @keyframes waGerak {
+
     0%, 100% {
         transform: translateX(0) rotate(-2deg);
     }
@@ -31,15 +38,22 @@
     }
 }
 
+
+/* =========================
+   INSTAGRAM
+   ========================= */
+
 .image-ig {
     position: absolute;
     top: 30%;
     left: 5%;
     width: 75px;
+
     animation: igGerak 4s ease-in-out infinite;
 }
 
 @keyframes igGerak {
+
     0%, 100% {
         transform: translateX(0) rotate(-2deg);
     }
@@ -49,15 +63,22 @@
     }
 }
 
+
+/* =========================
+   TIKTOK
+   ========================= */
+
 .image-tiktok {
     position: absolute;
     top: 45%;
     left: 5%;
     width: 70px;
+
     animation: tiktokGerak 4s ease-out infinite;
 }
 
 @keyframes tiktokGerak {
+
     0%, 100% {
         transform: translateX(0) rotate(-2deg);
     }
@@ -67,14 +88,25 @@
     }
 }
 
+
+/* =========================
+   PARAGRAF
+   ========================= */
+
 .paragraf {
     position: absolute;
     top: 60%;
     left: 250px;
+
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
     color: rgb(203, 63, 86);
 }
+
+
+/* =========================
+   LOVE
+   ========================= */
 
 .lope {
     position: absolute;
@@ -83,12 +115,22 @@
     width: 300px;
 }
 
+
+/* =========================
+   GARIS
+   ========================= */
+
 .garis {
     position: absolute;
     top: 15%;
     left: 10%;
     width: 200px;
 }
+
+
+/* =========================
+   TABLET
+   ========================= */
 
 @media (max-width: 768px) {
 
@@ -117,6 +159,11 @@
         font-size: 16px;
     }
 }
+
+
+/* =========================
+   HP
+   ========================= */
 
 @media (max-width: 480px) {
 
